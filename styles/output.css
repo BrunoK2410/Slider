@@ -27,11 +27,7 @@
 
 .topRow {
   display: flex;
-  justify-content: flex-end;
   height: 200px;
-}
-.topRow img.active {
-  opacity: unset;
 }
 
 .bottomRow {
@@ -39,14 +35,10 @@
   height: 200px;
   margin-top: 10px;
 }
-.bottomRow img.active {
-  opacity: unset;
-}
 
 img {
   margin-right: 10px;
   border-radius: 5px;
-  opacity: 0.3;
 }
 
 .buttonContainer {
