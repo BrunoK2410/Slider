@@ -1,0 +1,22 @@
+{
+  "name": "slider",
+  "version": "1.0.0",
+  "description": "Bruno Katić <brunokatic2410@gmail.com>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrunoK2410/Slider.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BrunoK2410/Slider/issues"
+  },
+  "homepage": "https://github.com/BrunoK2410/Slider#readme",
+  "dependencies": {
+    "sass": "^1.60.0"
+  }
+}

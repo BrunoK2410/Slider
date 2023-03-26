@@ -5,9 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.cdnfonts.com/css/helvetica-neue-55"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <header>
+      <h3>Skup drugih elemenata na stranici</h3>
+    </header>
     <div class="container">
       <div class="content">
         <div class="images-container">
@@ -17,21 +30,21 @@
             <img src="imgs/slider-image-6.jpg" />
             <img src="imgs/slider-image-9.jpg" />
             <img src="imgs/slider-image-8.jpg" />
-            <img src="imgs/slider-image-5.jpg" class="active" />
+            <img src="imgs/slider-image-5.jpg" />
           </div>
           <div id="bottomRow" class="bottomRow">
             <img src="imgs/slider-image-3.jpg" />
             <img src="imgs/slider-image-2.jpg" />
             <img src="imgs/slider-image-1.jpg" />
             <img src="imgs/slider-image-2.jpg" />
-            <img src="imgs/slider-image-3.jpg" class="active" />
+            <img src="imgs/slider-image-3.jpg" />
             <div id="buttonContainer" class="buttonContainer">
               <div class="arrowsContainer">
-                <button id="prevArrow">
-                  <img id="prevImg" src="/imgs/arrow-gray-left.png" />
+                <button id="prevArrow" onclick="slide('prev')">
+                  <img id="prevImg" />
                 </button>
-                <button id="nextArrow">
-                  <img id="nextImg" src="imgs/arrow-gray-right.png" />
+                <button id="nextArrow" onclick="slide('next')">
+                  <img id="nextImg" />
                 </button>
               </div>
             </div>
@@ -49,12 +62,15 @@
         </div>
       </div>
     </div>
-
+    <footer>
+      <h3>Skup drugih elemenata na stranici</h3>
+    </footer>
     <script
       src="https://code.jquery.com/jquery-3.6.4.js"
       integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
       crossorigin="anonymous"
+      defer
     ></script>
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
   </body>
 </html>

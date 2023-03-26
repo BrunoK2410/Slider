@@ -1,0 +1,149 @@
+@use "variables";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  margin-left: auto;
+  align-items: center;
+  justify-content: end;
+  max-width: 941px;
+}
+
+.content {
+  display: flex;
+}
+
+.images-container {
+  width: 1230px;
+  height: 410px;
+  margin-left: -73px;
+}
+
+.topRow {
+  display: flex;
+  height: 200px;
+  // img.active {
+  //   opacity: unset;
+  // }
+}
+
+.bottomRow {
+  display: flex;
+  height: 200px;
+  margin-top: 10px;
+  // img.active {
+  //   opacity: unset;
+  // }
+}
+
+img {
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.buttonContainer {
+  flex-grow: 1;
+  position: relative;
+  display: inline-block;
+}
+
+.arrowsContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  #prevArrow {
+    padding: 22px 25px;
+  }
+  #nextArrow {
+    padding: 22px 25px;
+    margin-top: 10px;
+  }
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+  border: 1px solid variables.$blue;
+  border-radius: 5px;
+  #prevImg {
+    content: url("/imgs/arrow-blue-left.png");
+  }
+  #nextImg {
+    content: url("/imgs/arrow-blue-right.png");
+  }
+  &:hover {
+    border: 1px solid #dddddd;
+    #prevImg {
+      content: url("/imgs/arrow-gray-left.png");
+    }
+    #nextImg {
+      content: url("/imgs/arrow-gray-right.png");
+    }
+  }
+}
+
+.rightCopy {
+  width: 301px;
+  margin-left: 20px;
+  h1 {
+    font-family: variables.$SSP-font;
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: -0.2px;
+    color: variables.$blue;
+  }
+
+  p {
+    font-family: variables.$SSP-font;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.2px;
+
+    color: variables.$dark-grey;
+  }
+}
+
+header {
+  margin-left: auto;
+  display: flex;
+  max-width: 941px;
+  height: 100px;
+  background: variables.$grey;
+  justify-content: center;
+  h3 {
+    font-family: variables.$HN-font;
+    font-size: 15px;
+    color: variables.$white;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+footer {
+  margin-left: auto;
+  max-width: 941px;
+  display: flex;
+  height: 100px;
+  background: variables.$grey;
+  h3 {
+    font-family: variables.$HN-font;
+    font-size: 15px;
+    color: variables.$white;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 81px;
+  }
+}
