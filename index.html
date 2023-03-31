@@ -19,7 +19,10 @@
   </head>
   <body>
     <header>
-      <h3>Skup drugih elemenata na stranici</h3>
+      <div class="leftBox"></div>
+      <div class="rightBox">
+        <h3>Skup drugih elemenata na stranici</h3>
+      </div>
     </header>
     <div class="container">
       <div class="content">
@@ -35,18 +38,19 @@
           <div id="bottomRow" class="bottomRow">
             <img src="imgs/slider-image-3.jpg" />
             <img src="imgs/slider-image-2.jpg" />
+            <img src="imgs/slider-image-9.jpg" />
             <img src="imgs/slider-image-1.jpg" />
             <img src="imgs/slider-image-2.jpg" />
             <img src="imgs/slider-image-3.jpg" />
-            <div id="buttonContainer" class="buttonContainer">
-              <div class="arrowsContainer">
-                <button id="prevArrow" onclick="slide('prev')">
-                  <img id="prevImg" />
-                </button>
-                <button id="nextArrow" onclick="slide('next')">
-                  <img id="nextImg" />
-                </button>
-              </div>
+          </div>
+          <div id="buttonContainer" class="buttonContainer">
+            <div class="arrowsContainer">
+              <button id="prevArrow" onclick="slide('prev')">
+                <img id="prevImg" />
+              </button>
+              <button id="nextArrow" onclick="slide('next')">
+                <img id="nextImg" />
+              </button>
             </div>
           </div>
         </div>

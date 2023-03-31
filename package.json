@@ -4,7 +4,8 @@
   "description": "Bruno Katić <brunokatic2410@gmail.com>",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel index.js -d lib"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,10 @@
   "homepage": "https://github.com/BrunoK2410/Slider#readme",
   "dependencies": {
     "sass": "^1.60.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.21.4",
+    "@babel/preset-env": "^7.21.4"
   }
 }
