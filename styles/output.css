@@ -1,1 +1,162 @@
-*, *::before, *::after {margin: 0;padding: 0;box-sizing: border-box;}.container {display: flex;height: 100vh;margin-left: auto;align-items: center;justify-content: end;max-width: 941px;}.content {display: flex;}.images-container {width: 1230px;height: 410px;margin-left: -73px;}.images-container .topRow {position: relative;display: flex;height: 200px;}.images-container .bottomRow {display: flex;position: relative;margin-left: -130px;height: 200px;width: 1200px;margin-top: 10px;}.flexEnd {justify-content: flex-end;}.flexStart {justify-content: flex-start;}img {position: relative;margin-right: 10px;border-radius: 5px;}.buttonContainer {position: absolute;width: 60px;height: 36px;right: 331px;bottom: 230px;}.buttonContainer .arrowsContainer {position: absolute;top: 0;right: 0;display: flex;flex-direction: column;}.buttonContainer .arrowsContainer #prevArrow {padding: 22px 25px;}.buttonContainer .arrowsContainer #nextArrow {padding: 22px 25px;margin-top: 10px;}button {all: unset;cursor: pointer;border: 1px solid #134880;border-radius: 5px;}button #prevImg {content: url("/imgs/arrow-blue-left.png");}button #nextImg {content: url("/imgs/arrow-blue-right.png");}button:hover {border: 1px solid #dddddd;}button:hover #prevImg {content: url("/imgs/arrow-gray-left.png");}button:hover #nextImg {content: url("/imgs/arrow-gray-right.png");}.rightCopy {width: 301px;margin-left: 20px;}.rightCopy h1 {font-family: "Source Sans Pro", sans-serif;font-size: 32px;line-height: 38px;letter-spacing: -0.2px;color: #134880;}.rightCopy p {font-family: "Source Sans Pro", sans-serif;font-size: 18px;line-height: 26px;letter-spacing: -0.2px;color: #484a4c;}header {position: relative;margin-left: auto;display: flex;max-width: 941px;height: 100px;justify-content: flex-start;}header .leftBox {width: 301px;height: 100px;margin-right: 19px;background: #dddddd;border-radius: 0px 0px 5px 5px;}header .rightBox {width: 621px;height: 100px;background: #dddddd;border-radius: 0px 0px 5px 5px;}header .rightBox h3 {position: absolute;left: 400px;top: 39px;font-family: "Helvetica Neue 500", sans-serif;font-size: 15px;color: #ffffff;line-height: 18px;display: flex;align-items: center;}footer {margin-left: auto;max-width: 941px;display: flex;height: 100px;background: #dddddd;border-radius: 0px 0px 5px 5px;}footer h3 {font-family: "Helvetica Neue 500", sans-serif;font-size: 15px;color: #ffffff;line-height: 18px;display: flex;align-items: center;position: relative;left: 81px;}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: end;
+  max-width: 941px;
+}
+
+.content {
+  display: flex;
+}
+
+.images-container {
+  width: 1230px;
+  height: 410px;
+}
+.images-container .topRow {
+  display: flex;
+  height: 200px;
+}
+.images-container .bottomLine {
+  display: flex;
+  justify-content: space-between;
+}
+.images-container .bottomLine .bottomRow {
+  display: flex;
+  margin-left: -130px;
+  height: 200px;
+  width: 1200px;
+  margin-top: 10px;
+}
+
+.flexEnd {
+  justify-content: flex-end;
+}
+
+.flexStart {
+  justify-content: flex-start;
+}
+
+img {
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.arrowsContainer {
+  margin-top: 10px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+.arrowsContainer #prevArrow {
+  padding: 22px 25px;
+}
+.arrowsContainer #nextArrow {
+  padding: 22px 25px;
+  margin-top: 10px;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+  border: 1px solid #134880;
+  border-radius: 5px;
+}
+button #prevImg {
+  content: url("/imgs/arrow-blue-left.png");
+}
+button #nextImg {
+  content: url("/imgs/arrow-blue-right.png");
+}
+button:hover {
+  border: 1px solid #dddddd;
+}
+button:hover #prevImg {
+  content: url("/imgs/arrow-gray-left.png");
+}
+button:hover #nextImg {
+  content: url("/imgs/arrow-gray-right.png");
+}
+
+.rightCopy {
+  width: 301px;
+  margin-left: 20px;
+}
+.rightCopy h1 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 32px;
+  line-height: 38px;
+  letter-spacing: -0.2px;
+  color: #134880;
+}
+.rightCopy p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.2px;
+  color: #484a4c;
+}
+
+header {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  max-width: 941px;
+  height: 100px;
+  justify-content: flex-start;
+}
+header .leftBox {
+  width: 301px;
+  height: 100px;
+  margin-right: 19px;
+  background: #dddddd;
+  border-radius: 0px 0px 5px 5px;
+}
+header .rightBox {
+  width: 621px;
+  height: 100px;
+  background: #dddddd;
+  border-radius: 0px 0px 5px 5px;
+}
+header .rightBox h3 {
+  position: absolute;
+  left: 400px;
+  top: 39px;
+  font-family: "Helvetica Neue 500", sans-serif;
+  font-size: 15px;
+  color: #ffffff;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+}
+
+footer {
+  margin: 0 auto;
+  max-width: 941px;
+  display: flex;
+  height: 100px;
+  background: #dddddd;
+  border-radius: 5px 5px 5px 5px;
+}
+footer h3 {
+  font-family: "Helvetica Neue 500", sans-serif;
+  font-size: 15px;
+  color: #ffffff;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: 81px;
+}
+
+/*# sourceMappingURL=output.css.map */
