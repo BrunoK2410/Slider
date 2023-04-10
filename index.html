@@ -19,58 +19,44 @@
   </head>
   <body>
     <header>
-      <div class="leftBox"></div>
-      <div class="rightBox">
+      <div class="left-box"></div>
+      <div class="right-box">
         <h3>Skup drugih elemenata na stranici</h3>
       </div>
     </header>
     <div class="container">
       <div class="content">
         <div class="images-container">
-          <div id="topRow" class="topRow">
+          <div id="topRow" class="top-row">
             <img src="imgs/slider-image-9.jpg" />
             <img src="imgs/slider-image-7.jpg" />
             <img src="imgs/slider-image-6.jpg" />
-            <img src="imgs/slider-image-9.jpg" />
+            <!-- <img src="imgs/slider-image-9.jpg" />
             <img src="imgs/slider-image-8.jpg" />
-            <img src="imgs/slider-image-5.jpg" />
+            <img src="imgs/slider-image-5.jpg" /> -->
           </div>
-          <div class="bottomLine">
-            <div id="bottomRow" class="bottomRow">
+          <div class="bottom-row">
+            <div id="bottomRowImages" class="bottom-row-images">
               <img src="imgs/slider-image-3.jpg" />
               <img src="imgs/slider-image-2.jpg" />
-              <img src="imgs/slider-image-9.jpg" />
               <img src="imgs/slider-image-1.jpg" />
               <img src="imgs/slider-image-2.jpg" />
               <img src="imgs/slider-image-3.jpg" />
+              <img src="imgs/slider-image-9.jpg" />
+              <img src="imgs/slider-image-9.jpg" />
+              <img src="imgs/slider-image-9.jpg" />
             </div>
-            <div class="arrowsContainer">
+            <div class="arrows-container">
               <button id="prevArrow" onclick="slide('prev')">
-                <img id="prevImg" />
+                <img id="prevImg" width="16px" />
               </button>
               <button id="nextArrow" onclick="slide('next')">
-                <img id="nextImg" />
+                <img id="nextImg" width="16px" />
               </button>
             </div>
           </div>
-          <!-- <div id="bottomRow" class="bottomRow">
-            <img src="imgs/slider-image-3.jpg" />
-            <img src="imgs/slider-image-2.jpg" />
-            <img src="imgs/slider-image-9.jpg" />
-            <img src="imgs/slider-image-1.jpg" />
-            <img src="imgs/slider-image-2.jpg" />
-            <img src="imgs/slider-image-3.jpg" />
-          </div>
-          <div class="arrowsContainer">
-            <button id="prevArrow" onclick="slide('prev')">
-              <img id="prevImg" />
-            </button>
-            <button id="nextArrow" onclick="slide('next')">
-              <img id="nextImg" />
-            </button>
-          </div> -->
         </div>
-        <div class="rightCopy">
+        <div class="right-copy">
           <h1>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h1>
           <br />
           <p>
@@ -91,6 +77,6 @@
       crossorigin="anonymous"
       defer
     ></script>
-    <script src="index.js" defer></script>
+    <script src="lib/index.js" defer></script>
   </body>
 </html>
