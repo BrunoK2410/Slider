@@ -24,48 +24,43 @@
 .images-container {
   width: 1230px;
   height: 410px;
-  .topRow {
+
+  .top-row {
     display: flex;
     height: 200px;
+    gap: 10px;
+    justify-content: flex-end;
   }
 
-  .bottomLine {
+  .bottom-row {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
 
-    .bottomRow {
+    .bottom-row-images {
       display: flex;
-      margin-left: -130px;
+      position: relative;
+      left: -130px;
+      gap: 10px;
       height: 200px;
-      width: 1200px;
       margin-top: 10px;
     }
   }
 }
 
-.flexEnd {
-  justify-content: flex-end;
-}
-
-.flexStart {
-  justify-content: flex-start;
-}
-
 img {
-  margin-right: 10px;
   border-radius: 5px;
 }
 
-.arrowsContainer {
+.arrows-container {
   margin-top: 10px;
-  height: 200px;
+
   display: flex;
   flex-direction: column;
   #prevArrow {
-    padding: 22px 25px;
+    padding: 15px 22px;
   }
   #nextArrow {
-    padding: 22px 25px;
+    padding: 15px 22px;
     margin-top: 10px;
   }
 }
@@ -92,7 +87,7 @@ button {
   }
 }
 
-.rightCopy {
+.right-copy {
   width: 301px;
   margin-left: 20px;
   h1 {
@@ -120,14 +115,14 @@ header {
   max-width: 941px;
   height: 100px;
   justify-content: flex-start;
-  .leftBox {
+  .left-box {
     width: 301px;
     height: 100px;
     margin-right: 19px;
     background: variables.$grey;
     border-radius: 0px 0px 5px 5px;
   }
-  .rightBox {
+  .right-box {
     width: 621px;
     height: 100px;
     background: variables.$grey;
